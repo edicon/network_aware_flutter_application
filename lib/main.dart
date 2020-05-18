@@ -53,8 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Visibility(
-              visible: Provider.of<DataConnectionStatus>(context) ==
-                  DataConnectionStatus.disconnected,
+              visible: Provider.of<DataConnectionStatus>(context) == DataConnectionStatus.disconnected,
               child: InternetNotAvailable()),
           Expanded(
               child: Center(
